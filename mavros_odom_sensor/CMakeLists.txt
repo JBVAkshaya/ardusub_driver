@@ -42,7 +42,7 @@ target_link_libraries(mavros_odom_sensor
 )
 
 # Use dllexport instead of dllimport
-target_compile_definitions(mavros_odom_sensor PRIVATE "SAMPLE_SENSOR_BUILDING_DLL")
+target_compile_definitions(mavros_odom_sensor PRIVATE "MAVROS_ODOM_SENSOR_BUILDING_DLL")
 ament_target_dependencies(mavros_odom_sensor
   PUBLIC
     ${THIS_PACKAGE_INCLUDE_DEPENDS}
